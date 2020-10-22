@@ -1,78 +1,114 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Турбаза "Дон"</title>  
-<style>
-   .rightpic {
-    float: right;
-    margin: 0 0 5px 5px;
+ <html>
+
+   <head>
+     <title>РЎР°Р№С‚ РёРіСЂ Premium</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+<style> 
+ #navbar {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+	  #navbar li a {
+  text-decoration: none;
+  color: #FFDAB9;
+}
+.gradient {
+    background: #fefcea;
+    background: linear-gradient(14deg, #228B22, #8B008B);
+    padding: 10px;
    }
-  </style>
-</head>
-<body> 
+    </style> 
+ </head>
 
-
-<body bgcolor=#40E0D0> 
-<img src="01.PNG" width="1520" height="280">  
-<marquee behavior="alternate" direction="left" bgcolor="#AFEEEE">
-  Самые лучшие домики только у нас.
-  </marquee>
-<h1>
-Всю подробную информацию ищите в разделе "Информация о домиках"
-</h1>
-<form method="post" action="form.php" align="right">
-   <p><strong>Логин:</strong> 
-    <input maxlength="25" size="25" name="login"></p>
-   <p><strong>Пароль:</strong> 
-    <input type="password" maxlength="25" size="24" name="password"></p>
- <button type="submit">Вход</button> 
-  </form>  
-  
-<div>
-  <h1>Меню</h1>
-  <ul>
-    <li><a href="">О нас</a></li>
-    <li><a href="">Информация о домиках</a></li>
-    <li><a href="">Карта местности</a></li>
-    <li><a href="">Контакты</a></li>
-  </ul>
-</div>
-
-<h2>Новости </h2>
-<b><u>
-	<div>На базе отдыха появилась детская площадка современного образца, которая соответствует требованиям безопасности.</div>
-	<div>На территории базы появилась большая вместительная беседка для больших компаний.</div>
-	<div>Хотите отметить торжество на свежем воздухе? Турбаза Дон приглашает вас отметить это важное событие на территории базы отдыха!</div>
-	<div>На базе имеется собственный песчаный полностью оборудованный пляж. На песке вдоль берега под зонтиками установлены шезлонги.</div>
-</b></u>	
-	
-<center> 
-<h2>Наши пейзажи</h2>
-<img src="1.jpg" width="400" height="250"> 
-<img src="2.jpg" width="400" height="250"> 
-<img src="3.jpg" width="400" height="250"> 
-<p>Вот такие пейзажи вы сможите наблюдать</p>
-</center> 
-
-<center> 
-<h2>Дополнительные услуги предостовляемые базой отдыха</h2>
-<img src="5.jpg" width="400" height="250"> 
-<img src="6.jpg" width="400" height="250"> 
-<img src="7.jpg" width="400" height="250">
-</center>
-<center>
-<h1>
-Описание
-</h1>
-<h3>
-<footer>
-    <div> Турбаза «Дон» находится на Дону — рыболовная база отдыха расположена в живописном месте на левом берегу реки Дон в Волгоградской области, присудствуют разные виды развлечений</div>
-    <div>Расположение домиков в небольшом отдалении от Дона.</div>
-    <div> Так же подходит для рыбаков. </div> 
-    <div> Бронь домиков по телефону: +7-905-654-12-53 </div> 
-</footer> 
+   <body class="gradient">
+     <div id="header">
+	 <h3 align="center">
+	 <font color="#00FF00">
+	 РќР°С€Р° РєРѕРјРїР°РЅРёСЏ
+РРіСЂС‹ Premium
+</font>
 </h3>
-</center>
+	 <p align="right">
+	 	 <button onclick="document.getElementById('id01').style.display='block'">Р РµРіРёСЃС‚СЂР°С†РёСЏ</button>
+</p>
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Р—Р°РєСЂС‹С‚СЊ</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Р РµРіРёСЃС‚СЂР°С†РёСЏ</h1>
+      <p>РџРѕР¶Р°Р»СѓР№СЃС‚Р°, Р·Р°РїРѕР»РЅРёС‚Рµ СЌС‚Сѓ С„РѕСЂРјСѓ, С‡С‚РѕР±С‹ СЃРѕР·РґР°С‚СЊ СѓС‡РµС‚РЅСѓСЋ Р·Р°РїРёСЃСЊ.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Р’РІРµРґРёС‚Рµ Email" name="email" required>
 
-</body>
-</html>
+      <label for="psw"><b>РџР°СЂРѕР»СЊ</b></label>
+      <input type="password" placeholder="Р’РІРµРґРёС‚Рµ РїР°СЂРѕР»СЊ" name="psw" required>
+
+      <label for="psw-repeat"><b>РџРѕРІС‚РѕСЂРёС‚Рµ РїР°СЂРѕР»СЊ</b></label>
+      <input type="password" placeholder="РџР°РІС‚РѕСЂРёС‚Рµ РїРѕСЂРѕР»СЊ" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Р—Р°РїРѕРјРЅРёС‚СЊ РјРµРЅСЏ
+      </label>
+
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">РћС‚РјРµРЅР°</button>
+        <button type="submit" class="buttonsignup">Р—Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°С‚СЊСЃСЏ</button>
+      </div>
+    </div>
+  </form>
+</div>	 
+	 </div>
+     <div id="menu"> <font color="#CD853F"; size=+3>РњРµРЅСЋ</font>
+	         <h1 align="left">
+                  <ul id="navbar">
+                        <li><a href="01.html">РљРѕРјРїР°РЅРёСЏ</a></li>
+                        <li><a href="02.html">РџСЂРѕРґСѓРєС†РёСЏ</a></li>
+                        <li><a href="03.html">Р”РѕСЃС‚Р°РІРєР° Рё РѕРїР»Р°С‚Р°</a></li>
+                 </ul> 
+            </h1>
+	 <div id="content">
+	 <font color= "#40E0D0" size=+2>
+	 Р’СЃРµ РјС‹ Р»СЋР±РёРј РёРіСЂС‹, Рё РїРѕСЌС‚РѕРјСѓ РјС‹ СЃРѕР·РґР°Р»Рё 
+	 <p>СЃРІРѕР№ СЃР°Р№С‚ РїРѕ РїСЂРѕРґРІРёР¶РµРЅРёСЋ РёС… РІ РјР°СЃСЃС‹
+	 <font color= "#7FFFD4" size=+2>
+	 <p>РќРёР¶Рµ РїСЂРµРґСЃС‚Р°РІР»РµРЅС‹ РёРіСЂС‹ РєРѕС‚РѕСЂС‹Рµ РјС‹ Р»РёР±Рѕ СЂР°Р·СЂР°Р±РѕС‚Р°Р»Рё 
+<p>Р»РёР±Рѕ РїРѕРјРѕРіР°РµРј РїСЂРѕРґРІРёРіР°С‚СЊ РЅР° РЅР°С€РµРј СЃР°Р№С‚Рµ
+</font></p>
+  <img 
+  src="https://3dnews.ru/assets/external/illustrations/2018/06/27/971840/geforce-now-gamewall-v2.png"
+  width= 500px
+  >
+       <div id="news">
+	   <marquee behavior="alternate" direction="left" height="20">
+	   РќРћР’РћРЎРўР
+	   </marquee>
+	   <p><font color="#87CEFA">
+	   В«Р‘РѕР»СЊС€Рµ РЅРёРєР°РєРёС… РџСЂРѕСЂРѕРєРѕРІ, РЅРёРєР°РєРѕР№ Р»Р¶РёВ» вЂ” С‚РёР·РµСЂ Halo Infinite РЅР°РјРµРєР°РµС‚ РЅР° СЃРІСЏР·СЊ СЃ Halo Wars 2
+	   </p>
+	   <p>
+	   Р­РєСЃ-СЂРµРґР°РєС‚РѕСЂ Game Informer: С‚РµСЃС‚РёСЂРѕРІС‰РёРєРё СЃС‡РёС‚Р°СЋС‚ Marvel's Avengers РЅРµРІРµСЂРѕСЏС‚РЅРѕ СЃРєСѓС‡РЅРѕР№
+	   </p>
+	   <p>
+	  РўРІРѕСЂС‡РµСЃРєРёР№ СЂСѓРєРѕРІРѕРґРёС‚РµР»СЊ AssassinвЂ™s Creed Valhalla РїРѕРєРёРЅСѓР» РїСЂРѕРµРєС‚ РЅР° С„РѕРЅРµ РѕР±РІРёРЅРµРЅРёСЏ РІ РёР·РјРµРЅРµ Р¶РµРЅРµ
+	   </p>
+	   <p>
+	    Project CARS 3 СЃС‚Р°СЂС‚СѓРµС‚ РЅР° PC Рё РєРѕРЅСЃРѕР»СЏС… 28 Р°РІРіСѓСЃС‚Р°
+	   </p>
+	   <p>
+	  Р’ Fortnite РїРѕРєР°Р¶СѓС‚ В«РќР°С‡Р°Р»РѕВ», В«РџСЂРµСЃС‚РёР¶В» Рё В«Р‘СЌС‚РјРµРЅ: РќР°С‡Р°Р»РѕВ» (РЅРѕ РЅРµ РІ Р РѕСЃСЃРёРё)
+	   </p>
+	   </div>
+	   </div>
+	   </div>
+     <div id="footer">
+	 <p><font color="#DAA520" face="Arial">
+<p> РўР°Рє Р¶Рµ РІС‹ РјРѕР¶РµС‚Рµ РїРѕСЃРµС‚РёС‚СЊ РЅР°С€ РјР°РіР°Р·РёРЅ РЅР°С…РѕРґСЏС‰РёР№СЃСЏ РІ Рі.Р’РѕР»РіРѕРіСЂР°Рґ СѓР». Р•СЂРµРјРµРЅРєРѕ РґРѕРј 5
+<p>Р•СЃР»Рё С‡С‚Рѕ-С‚Рѕ РЅРµ РїРѕРЅСЏС‚РЅРѕ РІС‹ РІСЃРµРіРґР° РјРѕР¶РµС‚Рµ РѕР±СЂР°С‚РёС‚СЊСЃСЏ РїРѕ РЅРѕРјРµСЂСѓ<font color="#8FBC8F"> 8 988 357 58 42 </font>СЌС‚Рѕ РЅРѕРјРµСЂ РЅР°С€РµР№ РїРѕРґРґРµСЂР¶РєРё
+</p>
+	 </div>
+   </body>
+
+ </html>
